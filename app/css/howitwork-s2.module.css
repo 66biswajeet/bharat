@@ -1,0 +1,82 @@
+.road-map-main {
+    padding: 150px 0 51px;
+}
+
+.road-map-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 175px;
+
+    @media (max-width: 991px) {
+        margin-bottom: 25px;
+        height: auto;
+        display: block;
+    }
+}
+
+.road-map-wrapper::before,
+.road-map-wrapper::after {
+    content: "";
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+.road-map-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 25px solid transparent;
+    border-top-color: #148938;
+    border-right-color: #148938;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(45deg);
+
+    @media (max-width: 992px) {
+        position: unset;
+        border: 25px solid #148938;
+    }
+}
+
+.road-map-circle .road-map-circle-text {
+    /* Styles remain within this class */
+}
+
+.road-map-card {
+    width: 35%;
+    /* Removed redundant float property */
+    background: #148938;
+    padding: 20px;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    border-radius: 5px;
+
+
+    @media (max-width: 991px) {
+        width: 100%;
+        margin-top: 30px;
+        position: unset;
+    }
+
+    .card-head,
+    .card-text {
+        /* Styles remain within their respective classes */
+    }
+}
+
+.road-map-circle:hover {
+    background: #148938;
+    color: white;
+}
+
+.road-map-circle:hover .road-map-card {
+    background: #fff;
+    color: black;
+}

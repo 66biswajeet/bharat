@@ -1,0 +1,79 @@
+
+
+.grand_parent{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin:auto;
+    background-color: #ececec;
+    border-radius: 20px;
+    margin:30px auto;
+    border:2px solid #ace6ac;
+}
+
+.parent{
+    padding: 20px 10px;
+    background-color:white;
+    width:100%;
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border-bottom: 10px solid #ace6ac;
+    border-top: 10px solid #ace6ac;
+    border-left: 1px solid #ace6ac;
+    border-right: 1px solid #ace6ac;
+}
+
+.span{
+    color:#5da05d;
+}
+
+.h1{
+    font-size: 40px;
+    font-weight:800;
+}
+
+.btn_grand{
+    
+    
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+    padding: 40px 0;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.btn_parent{
+    border: none;
+    margin:20px 10px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+box-shadow: rgba(42, 233, 87, 0.24) 0px 3px 8px;
+column-gap: 11px;
+background-color: white;
+
+       
+}
+
+.btn_parent:hover{
+    border:2px solid rgb(92, 244, 92);
+}
+
+
+
+.btn{
+    
+}

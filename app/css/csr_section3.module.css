@@ -1,0 +1,47 @@
+
+
+.grand_parent{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 90%;
+    margin: auto;
+    margin:100px auto;
+}
+
+@media(max-width:787px){
+    .grand_parent{
+        grid-template-columns: 1fr;
+        margin:50px auto;
+    }
+}
+
+.parent{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.child1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.p{
+
+}
+
+.h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.span{
+color:#86b386;
+}
+
+.parent2{
+    background-position: center;
+    background-size: cover;
+    margin:auto;
+}

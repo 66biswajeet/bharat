@@ -1,0 +1,118 @@
+.heroSection {
+    background-color: #bfffbf;
+    padding: 24px;
+    /* max-width: 1200px; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 95%;
+}
+
+
+.imageContainer {
+    width: 50%;
+    max-width: 500px;
+    margin-bottom: 16px;
+}
+
+.image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.contentContainer {
+    width: 45%;
+    /* Responsiveness: use flex-grow and flex-direction */
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    row-gap: 30px;
+    margin: auto;
+}
+
+.title {
+   font-size: 50px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.charity {
+    color: #148938;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.joinMissionButton {
+    background-color: #148938;;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.joinMissionButton:hover {
+    background-color: #48de75;;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .imageContainer,
+    .contentContainer {
+        width: 100%;
+    }
+
+        .title {
+            font-size: 30px;
+           
+        }
+}
+
+@media (max-width: 576px) {
+    .imageContainer {
+        max-width: 350px;
+    }
+         .title {
+             font-size: 30px;
+    
+         }
+}
+
+.clip{
+    background-color: #bfffbf;
+    height: 200px;
+    clip-path: polygon(0 0, 51% 42%, 100% 0);
+}

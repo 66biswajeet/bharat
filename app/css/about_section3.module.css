@@ -1,0 +1,93 @@
+.grand_parent {
+    width: 95%;
+    margin: auto;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    overflow-x: hidden;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.span {
+    color: #518451;
+}
+
+.p {
+
+}
+
+.teamMemberCard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: auto;
+}
+
+
+
+.cardContainer{
+    display: flex;
+    flex-direction:row;
+    /* border: 1px solid rgb(175, 233, 175); */
+    padding:10px 0;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.cardContainer:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #95eb95;
+    border: 1px solid #518451;
+}
+
+.memberInfo{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    row-gap: 10px;
+    margin: auto 10px;
+}
+
+@media(max-width:700px){
+
+    .teamMemberCard{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0px;
+    }
+   .cardContainer{
+    flex-direction: column;
+    margin: auto;
+    width: 400px;
+   }
+}
+
+.memberName{
+    color:black;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.memberPosition{
+    color:#116711;
+    font-weight: 500;
+}
